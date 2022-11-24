@@ -1,0 +1,43 @@
+@import '../../styles/variables';
+
+.wrapper {
+  display: flex;
+  margin-bottom: 20px;
+
+  @media (max-width: $screen-mobile) {
+    flex-direction: column;
+  }
+}
+
+.button {
+  max-width: 100%;
+  text-transform: uppercase;
+  padding: 15px;
+  background-color: #fff;
+  flex: 1 1 0;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 0;
+  border: 1px solid #dfe5ec;
+}
+
+.button:focus {
+  outline: $primary-outline;
+  z-index: 1;
+}
+
+.button:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.button:last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+.buttonActive {
+  background-color: $primary-color;
+  color: #fff;
+}
