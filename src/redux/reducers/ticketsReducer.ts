@@ -26,7 +26,7 @@ function ticketsReducer(state: IState = initialState, action: ITicketsAction): I
 
     case ALL_TICKETS_LOADED:
       return {
-        data: [...state.data, ...action.payload],
+        data: [...action.payload],
         isLoading: false,
       };
 

@@ -74,6 +74,8 @@ function TicketsList() {
       {!isTicketsLoading && filteredAndSortedTickets.length !== 0 && (
         <button
           className="show-more-button"
+          type="button"
+          aria-label="show-more-button"
           onClick={() =>
             setShowedTicketsNumber((prevShowedTicketsNumber) => prevShowedTicketsNumber + 5)
           }
