@@ -1,1 +1,1 @@
-https://aviasales-test-eta.vercel.app/
+https://aviasales-full.vercel.app/
